@@ -1,0 +1,192 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+
+/* || Utility || */
+
+.accessibility {
+    position: absolute;
+    left: 10000px;
+}
+
+/* || Design for iPhone screen first: 9:19.5 ratio (426x921) || */
+
+body {
+    font-family: Gorgeous-Serif-Font;
+}
+
+nav.primary-menu {
+    max-width: 100%;
+    min-height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-menu ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.primary-menu ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 5%;
+    font-family: golften;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-align: center;
+    }
+
+ /*    .primary-menu li:nth-child(2) {
+        font-size:1em;
+    } */
+
+.primary-menu li a {
+    color: #b9966f;
+    text-decoration: none;
+}
+
+div.h1-background {
+    width: 100%;
+    height: 400px;
+    background-image: url(intro-pic.png);
+    background-size: cover;
+    position: relative;
+    
+}
+
+h1 {
+    width: 100%;
+    font-family: Golften;
+    font-size: 5rem;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    color: #b9966f;
+    letter-spacing: 3px;
+    margin-top: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ||MAIN INDEX PAGE|| */
+
+h2{
+    font-family: golften;
+    font-size: 2rem;
+    text-align: center;
+    background-color: black;
+    color: #b9966f;
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.short-stories {
+    background-color: #3b3c2b;
+}
+
+.short-stories p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding: 5%;
+    color: #b6a592;
+}
+
+.short-stories cite {
+    background-color: #7b350a86;
+    font-style:italic;
+    color:black;
+    font-size: 2.3rem;
+    text-align: center;
+    display: block;
+    border-radius: 5%;
+}
+
+.short-stories em{
+    text-decoration: underline;
+}
+
+.short-stories p a {
+    color: #b6a592;
+    text-decoration: none;
+    
+}
+
+.short-stories p a:hover, a:focus {
+    color: #b9966f;
+    text-decoration: none;
+}
+
+.short-stories img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about {
+    background-color: rgb(16, 16, 16);
+}
+
+.about img {
+    display: block;
+    border-radius:50%;
+    border: 5px solid black;
+    width: 100%;
+    height: auto;
+}
+
+.about p {
+    text-indent: 8%;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding: 5%;
+    color: #181911;
+    background-color: #b6a592;
+}
+
+.novel {
+    /* background-color: #24241c; */
+  background-image: url(imgNatalie/dark-flower.png);
+}
+
+.novel p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding: 5%;
+    background-color: #b6a592bf;
+    color: #421b02;
+    margin: 10%;
+    margin-bottom: 0;
+}
+
+.novel span{
+    wrap:nowrap; 
+    font-size: 1.7rem;
+    font-weight: bolder;
+    font-family: golften;
+}
+    
+
+.contact {
+    background-color: #b6a592;
+    }
+
+.contact legend {
+    margin: 5%;
+    text-align: center;
+    font-family: golften;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.contact label {
+    font-size: 2rem;
+}

@@ -1,0 +1,33 @@
+html{
+    font-size: 22px
+}
+
+body {
+    background-color: #FFF8E8;
+    color: #000;
+}
+
+nav {
+    background-color: #473144;
+    color: whitesmoke;
+}
+
+main{
+    background-color: #76949F;
+}
+
+h1 {
+    background-color: #FF0035;
+}
+
+p{
+    color: #000;
+}
+
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+

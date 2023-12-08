@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="author" content="Nicole Haight">
+        <meta name="description" content="Checklist Page">
+        <link rel="icon" href="img/norwayflag.png" type="image/x-icon">
+    
+        <title>Check List</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+
+    </head>
+    <body>
+        <header>
+            <nav><!-- Complete me later --></nav>
+        </header>
+
+        <hr>
+
+        <main>
+            <article id="questionnaire">
+                <h1>Haight Family Vacation Checklist</h1>
+                    <p>Check this page often to see if anything needs to be completed</p>
+
+                    <p>At this time, there is only one task - complete the Vacation Questionnaire</p>
+
+                    <h2>Vacation Questionnaire</h2>
+                        <p>To get an idea of how to plan to Norway itinerary, please fill out this questionnaire</p>
+
+                            <form action="https://httpbin.org/get" method="get">
+                                <fieldset>
+                                    <legend>Who Are You?</legend>
+
+                                <p>
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus>
+                                </p>
+
+                                <p>
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                                </p>
+
+                                <p>
+                                    <label for="phone">Preferred Phone Number:</label>
+                                    <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern= "[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="on" required>
+                                </p>
+
+                                <p>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" placeholder="jane.doe@gmail.com" autocomplete="on" required>
+                                </p>
+
+                                </fieldset>
+                                <br>
+                                <fieldset>
+                                    <legend>What Cities Would you Like to Visit?</legend>
+
+                                    <p>
+                                        <input type= "checkbox" name="cities" id="oslo" value="oslo">
+                                        <label for="cities">Oslo</label>
+                                    </p>
+
+                                    <p>
+                                        <input type= "checkbox" name="cities" id="bergen" value="bergen">
+                                        <label for="bergen">Bergen</label>
+                                    </p>
+
+                                    <p>
+                                        <input type= "checkbox" name="cities" id="alesund" value="alesund">
+                                        <label for="alesund">Alesund</label>
+                                    </p>
+
+                                    <p>
+                                        <input type= "checkbox" name="cities" id="oslo" value="oslo">
+                                        <label for="cities">Oslo</label>
+                                    </p>
+
+                                    <p>
+                                        <input type= "checkbox" name="cities" id="trondheim" value="trondheim">
+                                        <label for="trondheim">Trondheim</label>
+                                    </p>
+
+                                    <p>
+                                        <input type= "checkbox" name="cities" id="kristiansand" value="kristiansand">
+                                        <label for="kristiansand">Kristiansand</label>
+                                    </p>
+
+                                    <p>
+                                        <input type= "checkbox" name="cities" id="othercity" value="othercity">
+                                        <label for="othercity">Other</label>
+                                    </p>
+
+                                </fieldset>
+                                <br>
+                                <fieldset>
+                                    <legend>What is Your Preferred Airline?</legend>
+
+                                    <p>
+                                        <input type="radio" name="airline" id="norwegian" value= "norwegian">
+                                        <label for="norwegian">Norwegian</label>
+                                    </p>
+
+                                    <p>
+                                        <input type="radio" name="airline" id="sas" value= "sas">
+                                        <label for="sas">SAS</label>
+                                    </p>
+
+                                    <p>
+                                        <input type="radio" name="airline" id="american" value= "american">
+                                        <label for="american">American</label>
+                                    </p>
+
+                                    <p>
+                                        <input type="radio" name="airline" id="united" value= "united">
+                                        <label for="united">United</label>
+                                    </p>
+
+                                    <p>
+                                        <input type="radio" name="airline" id="otherairline" value= "otherairline">
+                                        <label for="otherairline">Other</label>
+                                    </p>
+
+                                    <p>
+                                        <input type="radio" name="airline" id="noairline" value= "noairline">
+                                        <label for="noairline">No preference</label>
+                                    </p>
+
+                                </fieldset>
+                                <br>
+                                <fieldset>
+                                    <legend>What is your favorite vacation activity?</legend>
+
+                                        <label for="activity">Favorite Activity</label>
+                                        <select name="activity" id="activity" multiple size="10">
+                                            <optgroup label="Active Activities">
+                                                <option value="hiking">Hiking</option>
+                                                <option value="climbing">Climbing</option>
+                                                <option value="swimming">Swimming</option>
+                                                <option value="running">Running</option>
+                                                <option value="biking">Biking</option>
+                                                <option value="walk">Walk (>2miles)</option>
+                                                <option value="ski">Ski</option>
+                                            </optgroup>
+
+                                            <optgroup label="Leisurely/Moderate Activities">
+                                                <option value="beach">Beach</option>
+                                                <option value="museum">Museum</option>
+                                                <option value="artgallery">Art Gallery</option>
+                                                <option value="museum">Shopping</option>
+                                            </optgroup>
+
+                                            <optgroup label="Relaxing Activities">
+                                                <option value="massage">Massage</option>
+                                                <option value="spa">Spa Treatments</option>
+                                                <option value="nails">Mani/pedi</option>
+                                                <option value="dine">Dine</option>
+                                                <option value="fish">Fish</option>
+                                                <option value="car">Car Sightseeing</option>
+                                                <option value="ferry">Ferry Ride</option>
+                                            </optgroup>
+                                    </p>
+                                    </fieldset>
+
+                                    <br>
+
+                                    <!-- <fieldset>
+                                        <legend>Favorite Family Member</legend>
+                                        
+
+                                        <label for="familymember">Favorite Family Member</label>
+                                        <input type="text" name="familymember" id="familymember" list="family-list">
+                                        <datalist id="family-list">
+                                            <option value="Doug">
+                                            <option value="Theresa">
+                                            <option value="Rosie">
+                                            <option value="Nikki">
+                                            <option value="Stephen">
+                                            <option value="Mike">
+                                            <option value="Lindi">
+                                            <option value="Jeffrey">
+                                            <option value="Whiskey">
+                                            <option value="Kona">
+                                            <option value="Mocha">
+                                            <option value="Gracie">
+                                            <option value="Rocky">
+                                        </datalist>
+
+                                    </fieldset>
+
+                                    <br> -->
+
+                                    <fieldset>
+                                        <legend>Summer availability</legend>
+                                    <p>
+                                        <label for="availabilty">Availability:</label>
+                                        <br>
+                                        <textarea name="availabilty" id="availabilty" cols="30" rows="10" placeholder="Please write your sumer 2024 availability here. Also include how long you can take vacation from work for (e.g. 2 weeks). Include any other scheduling details here, too"></textarea>
+                                    </p>
+                                    </fieldset>
+
+                                    <br>
+
+                                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+                                <button type="reset">Reset</button>
+
+                            </form>
+            </article>
+        </main>
+
+        <hr>
+
+        <footer><!-- Complete me later --></footer>
+
+    </body>
+    </html>
