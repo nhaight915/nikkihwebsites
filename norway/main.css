@@ -1,33 +1,296 @@
-html{
-    font-size: 22px
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* utility classes */
+
+.hide {
+    position: absolute;
+    left: 10000px;
 }
 
 body {
-    background-color: #FFF8E8;
-    color: #000;
+    max-width:100vw;
+    background-color: rgba(84, 108, 124, 0.178);
+    display: flex;
+    flex-direction: column;
+
+    
 }
 
-nav {
-    background-color: #473144;
+img {
+    display: block;
+}
+
+/* header  */
+
+section.heading-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color:rgb(8, 8, 67);
+    color: white;
+    gap: 50%;
+
+}
+
+.heading-bar img {
+    width: 10%;
+    height: auto;
+    margin-left:10px;
+}
+
+nav.primary-navigation ul {
+    min-width:120%;
+    
+
+}
+
+nav.primary-navigation li {
+    display: inline;
+    list-style-type: none;
+    font-size:1.5rem;
+    padding: 2%;
+    
+}
+
+.primary-navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.primary-navigation a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.primary-navigation a:hover, a:focus {
+    text-decoration: none;
+    color: red;
+}
+
+header.index {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url("img/bergen.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+section.hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+
+.hero-image h1{
+    color: rgb(89, 7, 7);
+    min-height: 50%;
+    font-size: 5rem;
+    background-color:rgba(255, 255, 255, 0.113);
+    font-family:'NORTHDEN ROUGH';
+}
+
+.hero-image h2{
+    min-height: 50%;
+    color: rgba(89, 7, 7, 0.736);
+    font-size: 3.5rem;
+    background-color:rgba(255, 255, 255, 0.113);
+    font-family:'NORTHDEN ROUGH';
+}
+
+/* main */
+
+.introduction p {
+    font-size: 1.3rem;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    font-family:'roboto'
+}
+
+p.divider {
+    text-align: center;
+    padding: 2%;
+    background-color: rgba(84, 108, 124, 0.178);
+    margin: 0;
+    color: black;
+    
+}
+
+/* || Bulletin Section of Index Page || */
+
+article.bulletin {
+    margin: 5%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    font-family: 'roboto';
+}
+
+.bulletin h2 {
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.bulletin p {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.bulletin dt {
+    font-size: 2.5rem;
+    padding-left:2%;
+    font-weight: bold;
+}
+
+.bulletin dd {
+    font-weight: bolder;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    font-size: 1.2rem;
+}
+
+/* || Bulletin end || */
+
+/* || Aside start|| */
+
+aside {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 5%;
+}
+
+/* || FLIGHTS PAGE || */
+
+
+    
+section.heading-bar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        background-color:rgb(8, 8, 67);
+        color: white;
+        gap: 50%;
+        min-height: 50px;
+        
+    
+    }
+
+article.itinerary-download {
+    background-color: gray;
+    padding-bottom: 1%;
+}
+
+.itinerary-download h2 {
+    text-align: center;
+    padding: 2%;
+}
+
+.itinerary-download table {
+    margin-left: 15%;
+    margin-bottom:5%;
+}
+
+.itinerary-download td, th {
+    padding: 1%;
+    min-width: 100px;
+    background-color: lightgrey;
+}
+
+.itinerary-download p {
+    text-align: center;
+    background-color: lightgrey;
+    font-size: 1.3rem;
+}
+
+
+article.flight-departure {
+        padding: 2%;
+    }
+
+.flight-departure h2 {
+    text-align: center;
+    padding: 2%;
+}
+
+.flight-departure table, .return-flight table {
+    margin-left: 20%;
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 1%;
+}
+
+article.return-flight {
+    background-color:rgb(8, 8, 67);
+    padding: 2%;
+    }
+
+.return-flight h2 {
+    text-align: center;
+    color: whitesmoke;
+    padding:2%;
+}
+
+.return-flight table, .return-flight caption {
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: rgb(81, 4, 4);
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+footer a:visited {
     color: whitesmoke;
 }
 
-main{
-    background-color: #76949F;
+footer a:hover, focus {
+    color:blanchedalmond;
 }
 
-h1 {
-    background-color: #FF0035;
+footer a:active {
+    color: white;
 }
 
-p{
-    color: #000;
+/* || Itinerary and Accomodations Page Under construction || */
+
+figure.construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-table, tr, th, td, caption {
-    border: 1px solid #eee;
-    font-family: 'Courier New', 'Courier New', Courier, monospace;
-    border-collapse: collapse;
-    padding: 0.5rem;
+.construction img {
+    max-width: 25%;
+    height: auto;
 }
-
