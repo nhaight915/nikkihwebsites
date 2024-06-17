@@ -97,17 +97,17 @@ h2{
     font-size: 1.8rem;
     line-height: 1.6;
     padding: 5%;
-    color: #b6a592;
+    color: #ffebd4;
 }
 
 .short-stories cite {
-    background-color: #7b350ac6;
+    color: #5c2605;
+    background-color: rgb(252, 216, 177);
+    border: 5px double black;
     font-style:italic;
-    color:black;
     font-size: 2.3rem;
     text-align: center;
     display: block;
-    border-radius: 5%;
 }
 
 .short-stories em{
@@ -115,7 +115,7 @@ h2{
 }
 
 .short-stories p a {
-    color: #b6a592;
+    color: #ffebd4;
     text-decoration: none;
     
 }
@@ -133,23 +133,59 @@ h2{
 
 .about {
     background-color: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.about h2 {
+    background-color: rgb(16, 16, 16);
 }
 
 .about img {
     display: block;
-    border-radius:50%;
+    border-radius: 50%;
     border: 5px solid black;
     width: 100%;
     height: auto;
 }
 
+
+
+img.border {
+    display:block;
+    border-radius: 0;
+    border: none;
+    width:100%;
+    height:auto;
+    
+}
+
+
+
 .about p {
     text-indent: 8%;
-    font-size: 1.8rem;
+    font-size: 1.5em;
     line-height: 1.6;
-    padding: 5%;
     color: #181911;
-    background-color: #b6a592;
+    color: #c9ae90;
+    position:absolute;
+    top:12%;
+    left:12%;
+    bottom: 12%;
+    right: 12%;
+    z-index:1;
+    over
+
+  
+}
+
+div.about {
+    width:100%;
+    z-index:0;
+    margin:2%;
 }
 
 .novel {

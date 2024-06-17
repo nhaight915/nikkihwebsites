@@ -374,6 +374,88 @@ figure.construction {
     height: auto;
 }
 
+h1.itinerary-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%
+}
+
+figure.itinerary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(81, 4, 4);
+    border: black;
+    border-width: 8px
+}
+
+.itinerary img {
+    max-height: 50vh;
+    width: auto;
+}
+
+h2.itinerary {
+    padding: 3%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.itinerary {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+table.itinerary {
+
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.flight-tracker {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.flight-tracker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+figure.flight-tracker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table.flight-tracker {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 640px) and  (max-width: 767px) {
