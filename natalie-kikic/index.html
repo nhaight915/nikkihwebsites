@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
+    <header>
+        <!-- Hidden checkbox input -->
+        <input type="checkbox" id="menu-toggle">
         <section class="sticky-heading">
             <h1>NATALIE KIKIĆ</h1>
-            <button class="menu-button">
+            <!-- Label for the checkbox acts as the menu button -->
+            <label class="menu-button" for="menu-toggle">
                 <div class="menu-line"></div>
-            </button>
+            </label>
         </section>
-
         <nav class="primary-navigation-menu">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -24,20 +26,19 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header> 
+    </header>
 
-   <main>
-    <article id="hero" class="hero">
-       <figure>
-            <img src="img/window-by-sea.png" alt="window overlooking the Dalmatian coast" width="1414" height="1648">
-            <figcaption>
-                <h2>NATALIE KIKIĆ</h2>
-                <p class="italic-caption">speculative fiction writer</p>
-            </figcaption>
-       </figure> 
-    </article>
-
-   </main>
-   <footer></footer>
+    <main>
+        <article id="hero" class="hero">
+            <figure>
+                <img src="img/window-by-sea.png" alt="window overlooking the Dalmatian coast" width="1414" height="1648">
+                <figcaption>
+                    <h2>NATALIE KIKIĆ</h2>
+                    <p class="italic-caption">speculative fiction writer</p>
+                </figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer></footer>
 </body>
 </html>
