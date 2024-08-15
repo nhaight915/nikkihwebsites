@@ -75,7 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: white;
     color: var(--HEADER-BGCOLOR);
+    position: sticky;
 }
+
 
 .sticky-heading {
     padding: 0.25rem;
@@ -83,11 +85,11 @@ header {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    min-height: 5rem;
+    min-height:5rem;
 }
 
 .sticky-heading h1 {
-    padding: 1.5rem;
+    padding:1.5rem;
     letter-spacing: 3px;
 }
 
@@ -100,7 +102,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    cursor: pointer;
+    padding:0.5rem; /* important to keep padding to avoid going offscreen */
 }
 
 .menu-line,
@@ -127,105 +129,116 @@ header {
     transform: translate(-20px, 12px);
 }
 
-/* Hide the checkbox */
-#menu-toggle {
-    display: none;
-}
-
-/* When the checkbox is checked */
-#menu-toggle:checked ~ .sticky-heading .menu-line {
+:is(header:hover, header:focus-within) .menu-line {
     background-color: transparent;
-    transform: rotate(90deg);
+    transform: rotate(90deg)
 }
 
-#menu-toggle:checked ~ .sticky-heading .menu-line::before {
+:is(header:hover, header:focus-within) .menu-line::before {
     transform: translateX(-20px) rotate(45deg);
 }
 
-#menu-toggle:checked ~ .sticky-heading .menu-line::after {
+:is(header:hover, header:focus-within) .menu-line::after {
     transform: translateX(-20px) rotate(-45deg);
 }
 
-#menu-toggle:checked ~ .primary-navigation-menu {
+:is(header:hover, header:focus-within) nav {
     display: block;
-    animation: showMenu 0.5s ease-in-out forwards;
+    background-color: whitesmoke;
+    padding-bottom: 10rem;
+}
+
+nav {
+    background-color: white;
+    display: none;
+    transform-origin: top center;
+    animation: showMenu 0.5s ease-in-out;
 }
 
 @keyframes showMenu {
     0% {
         transform: scaleY(0);
     }
+
     80% {
         transform: scaleY(1.2);
     }
+
     100% {
         transform: scaleY(1);
     }
 }
 
-.primary-navigation-menu {
-    background-color: var(--HEADER-BGCOLOR);
-    display: none;
-    transform-origin: top center;
-}
-
-.primary-navigation-menu ul {
+nav ul {
     list-style-type: none;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-    padding: 0;
-    margin: 0;
 }
 
-.primary-navigation-menu li {
-    padding: 0.5rem;
-    border-top: 1px solid var(--HEADER-COLOR);
-    width: 100%;
-    display: flex;
-    justify-content: center;
+nav ul:first-child {
+    border-top: 1px solid var(--HEADER-BGCOLOR);
 }
 
-.primary-navigation-menu a {
+nav li {
+    justify-items: center;
+    padding: 3.5rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+
+
+nav a {
     display: block;
     text-align: center;
-    width: auto;
-    margin: 0;
+    width: 80%;
+    margin: auto;
+    
 }
 
-.primary-navigation-menu a:any-link {
-    color: pink;
+nav a:any-link {
+    color: var(--HEADER-BGCOLOR);
     font-weight: bold;
     text-decoration: none;
 }
 
-.primary-navigation-menu a:hover,
-.primary-navigation-menu a:focus {
+nav a:hover,
+nav a:focus {
     transform: scale(1.2);
     transition: all 0.3s;
 }
-
 /* End: STICKY HEADER */
+
 
 
 /* START: hero article (index): */
 article.hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     background-color: #0A0701;
     max-width: 100vw;
-    min-height:100vh;
+    border: 5px solid purple;
+    min-height:90vh;
+
 
 }
 
 .hero figure{
+    border: 5px solid green;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     padding-top:10%;
 }
 
 .hero img{
-    flex-grow: 3;
+    flex-grow: 0.3;
     max-width: 75%;
     height: auto;
     padding-bottom: 10%;
@@ -250,7 +263,34 @@ article.hero {
 }
 
 .hero p.italic-caption {
-    flex-grow:1;
+    flex-grow:10;
     font-size: 1em;
     padding: 3%;
+}
+
+/* end of hero article 
+START of about-me article
+*/
+
+.about-me figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+}
+
+.about-me img{
+    flex-grow: 3;
+    max-width: 75%;
+    height: auto;
+    padding: 10%;
+    
+    border: 2px solid red;
+}
+
+.about-me figcaption {
+    padding:10%;
+    border: 3px solid yellow;
 }
