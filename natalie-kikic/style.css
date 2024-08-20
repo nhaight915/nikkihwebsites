@@ -13,6 +13,7 @@
 :root {
     --HEADER-BGCOLOR: #0A0701;
     --HEADER-COLOR: #D2AC39;
+    --BUTTON-COLOR: #763f7d;
 }
 
 .regular-caption {
@@ -56,6 +57,7 @@ html {
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: 0.1em;
 }
 
 
@@ -75,7 +77,12 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: white;
     color: var(--HEADER-BGCOLOR);
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 99;
+    border-bottom: 0.5px solid #0A0701;
 }
 
 
@@ -90,7 +97,6 @@ header {
 
 .sticky-heading h1 {
     padding:1.5rem;
-    letter-spacing: 3px;
 }
 
 .menu-button {
@@ -221,14 +227,12 @@ article.hero {
     align-items: center;
     background-color: #0A0701;
     max-width: 100vw;
-    border: 5px solid purple;
-    min-height:90vh;
+    min-height:99vh;
 
 
 }
 
 .hero figure{
-    border: 5px solid green;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,7 +261,6 @@ article.hero {
 .hero h2 {
     flex-grow: 4;
     font-size: 3rem;
-    letter-spacing: 3px;
     padding: 8%;
     padding-bottom:5%;
 }
@@ -272,25 +275,289 @@ article.hero {
 START of about-me article
 */
 
+.about-me article {
+    background-color: white;
+}
+
 .about-me figure {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    border: 2px solid green;
 }
 
 .about-me img{
     flex-grow: 3;
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
     padding: 10%;
-    
-    border: 2px solid red;
+    padding-top: 3%;
+    padding-bottom:0%;
 }
 
 .about-me figcaption {
-    padding:10%;
-    border: 3px solid yellow;
+    padding:8%;
 }
+
+.about-me figcaption h2{
+    font-size: 3rem;
+    text-align: center;
+    color:#D2AC39;
+}
+
+.about-me p {
+    text-align: center;
+    padding:3%;
+    font-weight: 800;
+    line-height:1.3;
+}
+
+/* END of about-me article
+START of HOUSE-OF-LAVENDER article
+*/
+
+article.house-of-lavender {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A0701;
+}
+
+.house-of-lavender img {
+    flex-grow:2;
+    max-width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.house-of-lavender h2 {
+    color:#D2AC39;
+    font-size: 4rem;
+    line-height: 1.3;
+    padding:5%;
+    padding-left: 25%;
+    padding-right:25%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.house-of-lavender h3 {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    color:#D2AC39;
+    padding: 5%;
+    text-align: center;
+    line-height: 1.7;
+}
+
+/*END of house-of-lavender article
+START of hol-blurb
+*/
+
+article.hol-blurb {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0A0701;
+    max-width: 100%;
+}
+
+.hol-blurb p {
+    padding:0;
+    color:#D2AC39;
+    text-align: center;
+    line-height: 1.5;
+    margin: 5%;
+    font-size: 1.2rem;
+}
+
+section.hashtag {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+    flex-grow:1;
+    width: 100%;
+}
+
+.hashtag p {
+    font-size: 1rem;
+}
+
+
+.hol-blurb .learn-more-button {
+    width: 200px;
+    height: 50px;
+    margin: 5%;
+    background-color: var(--BUTTON-COLOR);
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    border: none;
+    border-radius: 500px;
+}
+
+
+/* End of .hol-blurb...
+
+START of FOOTER  */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    background-color: white;
+}
+
+article.footer-logo {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap:2%;
+    justify-items: center;
+    align-items: center;
+    display:grid;
+    max-width:80%;
+    margin:10%;
+}
+
+.footer-logo h2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 1.8rem;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+div.twitter-logo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.twitter-logo img{
+    max-width:25%;
+    height: auto;
+}
+
+div.instagram-logo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.instagram-logo img {
+    max-width: 25%;
+    height:auto;
+}
+
+/*END OF FOOTER */
+
+/* BOOKS PAGE ***************************************************************************
+
+*/
+
+main.books {
+    margin-top: 25%;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: flex-start;
+    margin-left:9%;
+    margin-right:9%;
+    margin-bottom:5%;
+
+}
+
+.books h2 {
+    color:#D2AC39;
+    text-align: center;
+    font-size: 1.9rem;
+    letter-spacing: 0.19em;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+.books p {
+    margin-top:7%;
+    margin-bottom:7%;
+}
+
+.books-category p {
+    text-align: left;
+    margin-bottom:5%;
+    line-height:1.7;
+    font-weight: bold;
+}
+
+.beware-quote {
+    font-style:italic;
+    margin-top:5%;
+    padding-bottom:10%;
+}
+
+div.justify-left {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.books img {
+    width:50%;
+    height:auto;
+    margin-top: 5%;
+    margin-bottom:10%;
+
+}
+ 
+.center-justify {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-justify-quote {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding:0%;
+    margin:0%;
+    line-height: 1.4;
+    font-size:1.2rem;
+}
+
+p.no-margin {
+    margin:0%;
+    font-size:1.2rem;
+}
+
+.books h3 {
+    font-size:3rem;
+    margin-top: 12%;
+    margin-bottom: 7%;
+    color:#D2AC39;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.books ul, .books li {
+    line-height: 1.6;
+    font-size: 1.2;
+    margin-left:7%;
+}
+
