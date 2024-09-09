@@ -561,3 +561,27 @@ p.no-margin {
     margin-left:7%;
 }
 
+/* #####End of books page########## */
+
+/* #####Start of short work page########## */
+
+article.short-work {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section.intro-short-work {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section.nightmare {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section.grandfather {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
