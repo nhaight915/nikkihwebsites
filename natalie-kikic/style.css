@@ -12,7 +12,13 @@ html {
     flex-flow:column nowrap;
     text-align: center;
     background-color: #0A0701;
+    font-size: 1rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
 }
+
 
 header, main, footer {
     max-width: 98vw;
@@ -51,7 +57,7 @@ header, main, footer {
     font-style: italic;
   }
   
-  img {
+img {
     display:block;
 }
 
@@ -68,14 +74,6 @@ header, main, footer {
 
 /* end utility classes */
 
-
-html {
-    font-size: 1rem;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.1em;
-}
 
 
 body {
@@ -94,12 +92,12 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: white;
     color: var(--HEADER-BGCOLOR);
+    width: 100%;
+    border-bottom: 0.5px solid #0A0701;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    z-index: 99;
-    border-bottom: 0.5px solid #0A0701;
+    z-index: 999;
 }
 
 
@@ -110,6 +108,7 @@ header {
     justify-content: space-between;
     align-items: center;
     min-height:5rem;
+   
 }
 
 .sticky-heading h1 {
@@ -247,6 +246,7 @@ article.hero {
     min-height:99vh;
 
 
+
 }
 
 .hero figure{
@@ -284,7 +284,7 @@ article.hero {
 
 .hero p.italic-caption {
     flex-grow:10;
-    font-size: 1em;
+    font-size: 1.2rem;
     padding: 3%;
 }
 
@@ -294,7 +294,6 @@ START of about-me article
 
 .about-me {
     background-color: white;
-    border:1px solid pink;
 }
 
 .about-me figure {
@@ -319,6 +318,7 @@ START of about-me article
 }
 
 .about-me figcaption h2{
+    line-height: 1.2;
     font-size: 3rem;
     text-align: center;
     color:#D2AC39;
@@ -328,7 +328,8 @@ START of about-me article
     text-align: center;
     padding:3%;
     font-weight: 800;
-    line-height:1.3;
+    line-height: 1.5;
+    font-size: 1.0rem;
 }
 
 /* END of about-me article
@@ -494,9 +495,10 @@ main.books {
     display: flex;
     flex-flow:column nowrap;
     justify-content: flex-start;
-    margin-left:9%;
-    margin-right:9%;
+    margin-left:0%;
+    margin-right:0%;
     margin-bottom:5%;
+    background-color: white;
 
 }
 
@@ -579,27 +581,139 @@ p.no-margin {
     margin-left:7%;
 }
 
-/* #####End of books page########## */
-
+/* #####End of books page########## 
+**************************************************************************************************
+*/
 /* #####Start of short work page########## */
 
-article.short-work {
+main.short-work {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+}
+
+article.intro-short-work {
     display: flex;
     flex-flow: column nowrap;
 }
 
-section.intro-short-work {
+.intro-short-work h2 {
+    color:#D2AC39;
+    font-size: 3.0rem;
+    line-height: 1.5;
+    padding:10%;
+    text-align: center;
+    font-weight: 100;
+    margin-top:20%;
+    }
+
+
+.intro-short-work img {
+    max-width:100%;
+    height: auto;
+}
+
+article.nightmare {
     display: flex;
     flex-flow: column nowrap;
 }
 
-section.nightmare {
+.nightmare h3 {
+    color:#D2AC39;
+    line-height: 1.5;
+    font-size: 2.5rem;
+    padding: 15%;
+    padding-left:8%;
+    padding-right: 8%;
+    font-weight: 200;
+}
+
+.nightmare p {
+    font-style: italic;
+    padding: 5%;
+    font-size: 1.4rem;
+}
+
+.nightmare a {
+    font-style: italic;
+    font-weight: 900;
+    color:#0A0701;
+    padding:2%;
+    font-size: 1.3rem;
+}
+
+article.grandfather {
     display: flex;
     flex-flow: column nowrap;
 }
 
-section.grandfather {
-    display: flex;
-    flex-flow: column nowrap;
+div.no-wrap{
+    display:inline-block;
 }
+
+.grandfather h3 {
+    color:#D2AC39;
+    line-height: 1.5;
+    font-size: 2.5rem;
+    padding: 15%;
+    padding-left:8%;
+    padding-right: 8%;
+    font-weight: 200;
+}
+
+.grandfather p {
+    font-style: italic;
+    padding: 5%;
+    font-size: 1.3rem;
+}
+
+.grandfather a {
+    font-style: italic;
+    font-weight: 900;
+    color:#0A0701;
+    padding: 5%;
+    font-size: 1.4rem;
+
+/* END OF SHORT-WORK PAGE
+***********************************************************************************************
+
+/* ABOUT ME / BIO PAGE */
+
+main.biography {
+    display:flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    max-width:99%;
+}
+
+.biography img {
+    max-width: 80%;
+    height:auto;
+    margin-top: 20%;
+    padding: 5%;
+}
+
+.biography h2 {
+    color:#D2AC39;
+    font-size: 4rem;
+    line-height: 1.3;
+    padding:5%;
+    padding-left: 25%;
+    padding-right:25%;
+    text-align: center;
+    font-weight: 100;
+    }
+
+.biography p {
+    line-height: 1.4;
+    font-size: 1.0rem;
+    font-weight: 300;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 7%;
+    text-align: justify;
+}
+
 
