@@ -673,6 +673,7 @@ div.no-wrap{
     color:#0A0701;
     padding: 5%;
     font-size: 1.4rem;
+}
 
 /* END OF SHORT-WORK PAGE
 ***********************************************************************************************
@@ -685,14 +686,14 @@ main.biography {
     background-color: white;
     align-items: center;
     justify-content: center;
-    max-width:99%;
+    max-width:100%;
 }
 
 .biography img {
     max-width: 80%;
     height:auto;
+    padding:5%;
     margin-top: 20%;
-    padding: 5%;
 }
 
 .biography h2 {
@@ -710,8 +711,8 @@ main.biography {
     line-height: 1.4;
     font-size: 1.0rem;
     font-weight: 300;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 7%;
     text-align: justify;
 }
