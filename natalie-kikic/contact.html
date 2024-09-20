@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicole Haight, Haus of Haight">
+    <meta name="description" content="This page is the contact page for Natalie Kikić">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +28,55 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contact-page" class="contact-page">
+        <section id="contact-opener" class="contact-opener">
+            <h2>CONTACT</h2>
+            <img src="img/contact-image.jpg" alt="Picture of an old house off of the coast of Croatia" width="600" height="411">
+        </section>
+
+        <article id="contact-form" class="contact-form">
+            <h3>Thank you for visiting</h3>
+            <p>If you are interested in discussing opportunities for publishing or have any inquiries, Natalie Kikić would love to hear from you. Please feel free to reach out using the form below."</p>
+
+            <form action="https://httpbin.org/get" method="get" class="form-fields">
+
+                <fieldset>
+                    <legend>Personal Info</legend>
+            <p>
+                <label for= "firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus>
+            </p>
+
+            <p>
+                <label for= "lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Austen" autocomplete="on" required>
+            </p>
+
+            <p>
+                <label for= "phone">Phone:</label>
+                <input type="email" name="email" id="email" placeholder="j.austen@email.com" required>
+                <!-- note to teacher: Dave had us remove the dashes, but i want the dashes for formatting, so I put them back in. The code works when tested for validation -->
+            </p>
+        
+            <p>
+                <label for= "email">Email:</label>
+                <input type="tel" name="phone" id="phone" placeholder="555-555-5555"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <!-- note to teacher: Dave had us remove the dashes, but i want the dashes for formatting, so I put them back in. The code works when tested for validation -->
+            </p>
+
+            <fieldset>
+                <legend>Message</legend>
+                    <label for="message"></label>
+                    <br>
+                    <textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message here please"></textarea>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+            </form>
+        </article>
         
     </main>
 
