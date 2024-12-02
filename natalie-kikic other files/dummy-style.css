@@ -1,0 +1,79 @@
+/* natalie-kikić style sheet */
+/* for Libre baskerville font (used for writing) */
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    display: flex;
+    flex-flow:column nowrap;
+    text-align: center;
+    background-color: #0A0701;
+    font-size: 1rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+}
+
+
+header, main, footer {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.menu-button {
+    margin-right: 7%;
+}
+
+
+/* utility classes  */
+
+:root {
+    --HEADER-BGCOLOR: #0A0701;
+    --HEADER-COLOR: #D2AC39;
+    --BUTTON-COLOR: #763f7d;
+}
+
+.regular-caption {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.bold-caption {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+.italic-caption {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+img {
+    display:block;
+}
+
+.hide {
+    position: absolute;
+    left: 10000px;
+}
+
+/* Define the custom font */
+@font-face {
+    font-family: 'TAN-ASTORIA';
+    src: url('fonts/tan-astoria-display-webfont.woff') format('woff'); 
+         }
+
+p {
+    color:#D2AC39;
+}
+
+/* end utility classes */
