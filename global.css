@@ -1,0 +1,160 @@
+/* GLOBAL stylesheet */
+
+/*  Add a selector for EACH of the tags used in the <body>
+    area of the HTML files. 
+
+    Add a variety of properties:values to ensure your website
+    __is easy to read,
+    __uses new colors and fonts (not the default black or Times font),
+    __has sufficient spacing on either side of a border, 
+    __follows all instructions.
+*/
+
+
+
+body {
+    font:0.7em;
+    margin: 0;
+    color: #42273B;
+    background-color: #ABC8C0;
+    max-height: 100vh;
+}
+
+header{
+    margin: 0%;
+    padding: 2%;
+    background-color: #70566D;
+    color: rgb(219, 180, 80);
+    max-width: 100%;
+    max-height: 15vh;
+
+}
+
+#tagline{
+    color: rgb(230, 201, 126);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    margin: 0%;
+    padding: 1%;
+}
+
+nav a, nav a:visited {
+    margin: 1%;
+    padding: 1%;
+    color: antiquewhite;
+    background-color: #42273B;
+    text-decoration: none;
+    border: #42273B solid 1px;
+}  
+nav a:hover {
+    color: #9EE493;
+}
+
+footer {
+    background-color: antiquewhite;
+    color: #533B4D;
+    margin: 0%;
+    margin-top:5%;
+    padding: 2%;
+
+}
+
+h1, h2 {
+    font-weight: 900;
+}
+
+p {
+    margin-bottom:1%;
+}
+
+table {
+    padding: 2%;
+    margin: 1%;
+    border: solid #42273B 1px;
+    border-collapse: collapse;
+    min-width: 45vw;
+    
+}
+
+caption {
+    padding: 1%;
+    font-weight: 700;
+}
+
+thead {
+    padding: 5%;
+    border: solid #42273B 2px;
+    background-color: #42273B;
+    color: white;
+    border-collapse: collapse;
+
+}
+tr, td {
+    padding: 1%;
+    border: blue;
+    border: solid #42273B;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 1%;
+    border-collapse: collapse;
+    border: solid #42273B;
+    
+}
+
+tbody{
+    background-color: antiquewhite;
+}
+
+/* Add more selectors to control each letter separately. */
+#o, #s, #u {
+    font-size: 100px;
+
+}
+
+#o{
+    color:orange;
+    position: relative
+}
+
+#s{
+    color: black;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+#u{
+    color: grey;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+
+ul{
+    min-height: 40vh;
+}
+
+li {
+    font-size: 1.4em;
+    list-style: none;
+}
+
+#contact{
+    font-size:1.7em;
+}
+
+
